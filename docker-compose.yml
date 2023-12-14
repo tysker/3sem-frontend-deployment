@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   app:
-    image: tyskerdocker/frontend-ci:latest
+    image: tyskerdocker/carsapp:latest
     ports:
       - 3000:3000
     restart: always

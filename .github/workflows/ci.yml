@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       -
         name: Checkout repository
@@ -29,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/frontend-ci:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/carsapp:latest
